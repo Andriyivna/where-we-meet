@@ -15,7 +15,6 @@ namespace where_we_meet
             for (int i = 0; i < houses.Length; i++)
             {
                 distance += (Math.Abs(carrentHouse.X - houses[i].X)) +( Math.Abs(carrentHouse.Y - houses[i].Y));
-                
             }
 
             return distance;
@@ -28,7 +27,7 @@ namespace where_we_meet
             for (int i = 0; i < houses.Length; i++)
             {
                 distance += (Math.Abs(carrentHouse.X - houses[i].X)) + (Math.Abs(carrentHouse.Y - houses[i].Y));
-                if (distance > min)
+                if (distance >= min)
                 {
                     return min;
                 }
